@@ -127,7 +127,7 @@ function App() {
         <button onClick={() => {
           console.log('替换到 /card');
           replace('/card');
-        }} style={{ marginRight: '10px' }}>ReducerDemo</button>
+        }} style={{ marginRight: '10px' }}>card</button>
         <button onClick={() => {
           console.log('跳转到 ReducerDemo');
           push('/ReducerDemo');
