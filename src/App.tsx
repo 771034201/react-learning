@@ -121,7 +121,7 @@ function App() {
         <button onClick={() => {
           console.log('跳转到首页');
           push('/');
-        }} style={{ marginRight: '10px' }}>首页A</button>
+        }} style={{ marginRight: '10px' }}>首页</button>
         <button onClick={() => {
           console.log('跳转到 /test');
           push('/test');
