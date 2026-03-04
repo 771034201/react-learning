@@ -1,0 +1,63 @@
+# Logs
+# 日志文件
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+# 依赖目录
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+# 测试覆盖率
+coverage
+*.lcov
+
+# Production
+# 生产构建
+dist
+dist-ssr
+*.local
+build
+
+# Editor directories and files
+# 编辑器配置
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+# 临时文件
+*.tmp
+*.temp
+.cache
+
+# OS files
+# 操作系统文件
+Thumbs.db
+
+# Ignore history
+.history
+
+# Ignore pnpm-lock.yaml
+pnpm-lock.yaml
