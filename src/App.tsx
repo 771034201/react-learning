@@ -36,11 +36,13 @@ import { EffectDemo } from './views/EffectDemo';
  * 1. 使用useState管理计数器状态
  * 2. 使用自定义的useHistory Hook获取当前路径和导航方法
  * 3. 根据当前路径渲染不同的页面内容
- *   - '/'路径: 渲染首页内容，包含计数器、测试组件和功能演示组件
- *   - '/aaa'路径: 渲染AAA页面
- *   - '/bbb'路径: 渲染BBB页面
+ *   - '/'路径: 渲染首页内容，包含计数器
+ *   - '/test'路径: 渲染Test组件
+ *   - '/card'路径: 渲染Card组件
+ *   - '/ReducerDemo'路径: 渲染ReducerDemo组件
+ *   - '/ShoppingCar'路径: 渲染ShoppingCar组件
  *   - '/DeferredValueDemo'路径: 渲染DeferredValueDemo组件
- *   - 默认路径: 渲染与首页相同的内容
+ *   - '/EffectDemo'路径: 渲染EffectDemo组件
  * 4. 提供导航按钮用于切换不同路由
  * 5. 显示Vite和React的logo链接
  */
@@ -119,27 +121,27 @@ function App() {
         <button onClick={() => {
           console.log('跳转到首页');
           push('/');
-        }} style={{ marginRight: '10px' }}>测试子组件</button>
+        }} style={{ marginRight: '10px' }}>首页A</button>
         <button onClick={() => {
-          console.log('跳转到 /测试子组件');
-          push('/aaa');
-        }} style={{ marginRight: '10px' }}>aaa组件</button>
+          console.log('跳转到 /test');
+          push('/test');
+        }} style={{ marginRight: '10px' }}>Test</button>
         <button onClick={() => {
-          console.log('替换到 /card');
+          console.log('跳转到 /card');
           replace('/card');
-        }} style={{ marginRight: '10px' }}>card</button>
+        }} style={{ marginRight: '10px' }}>Card</button>
         <button onClick={() => {
           console.log('跳转到 ReducerDemo');
           push('/ReducerDemo');
-        }}>ReducerDemo</button>
+        }} style={{ marginRight: '10px' }}>ReducerDemo</button>
         <button onClick={() => {
-          console.log('跳转到 ReducerDemo');
+          console.log('跳转到 ShoppingCar');
           push('/ShoppingCar');
-        }}>ShoppingCar</button>
+        }} style={{ marginRight: '10px' }}>ShoppingCar</button>
         <button onClick={() => {
           console.log('跳转到 DeferredValueDemo');
           push('/DeferredValueDemo');
-        }}>DeferredValueDemo</button>
+        }} style={{ marginRight: '10px' }}>DeferredValueDemo</button>
         <button onClick={() => {
           console.log('跳转到 EffectDemo');
           push('/EffectDemo');
