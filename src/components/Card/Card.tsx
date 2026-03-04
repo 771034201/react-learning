@@ -15,12 +15,11 @@ export interface CardProps {
 
 /**
  * 卡片组件
- * @returns {JSX.Element} 卡片组件
  */
 export const Card: React.FC = () => {
 
-  let [index, setIndex] = useState<number>(0);
-  let [list, setList] = useState<number[]>([1, 2, 3, 5, 4]);
+  const [index, setIndex] = useState<number>(0);
+  const [list] = useState<number[]>([1, 2, 3, 5, 4]);
 
   const event = new Event('cardEvent');
   useEffect(() => {
@@ -44,8 +43,8 @@ export const Card: React.FC = () => {
   }, []); // 空依赖数组，只在组件挂载时执行一次
 
   const handleClick = () => {
-    let newList = [...list]
-    let arr = newList.sort((a, b) => a - b);
+    const newList = [...list]
+    const arr = newList.sort((a, b) => a - b);
     console.log(arr);
 
   };

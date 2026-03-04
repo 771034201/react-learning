@@ -25,8 +25,6 @@ const defaultProps: Partial<TestProps> = {
 
 /**
  * 测试组件
- * @param {TestProps} props - 组件属性
- * @returns {JSX.Element} 测试组件
  */
 export const Test: React.FC<TestProps> = ({ exampleProp, title, children }) => {
   const props = { ...defaultProps, exampleProp, title };
