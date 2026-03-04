@@ -1,0 +1,33 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# 顶层 EditorConfig 配置
+root = true
+
+# 所有文件的默认配置
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown 文件配置
+[*.md]
+trim_trailing_whitespace = false
+
+# TypeScript/JavaScript 文件配置
+[*.{ts,tsx,js,jsx}]
+indent_size = 2
+
+# JSON/YAML 文件配置
+[*.{json,yaml,yml}]
+indent_size = 2
+
+# CSS/SCSS 文件配置
+[*.{css,scss,less}]
+indent_size = 2
+
+# HTML 文件配置
+[*.html]
+indent_size = 2

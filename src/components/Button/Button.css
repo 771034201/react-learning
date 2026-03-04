@@ -1,0 +1,94 @@
+/**
+ * 按钮组件样式
+ * 定义按钮的视觉样式和交互效果
+ */
+
+/* 基础按钮样式 */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+/* 尺寸变体 */
+.button--small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.button--medium {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.button--large {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+/* 颜色变体 */
+.button--default {
+  background-color: #f9f9f9;
+  border-color: #e0e0e0;
+  color: #333;
+}
+
+.button--default:hover:not(.button--disabled) {
+  background-color: #f0f0f0;
+  border-color: #d0d0d0;
+}
+
+.button--primary {
+  background-color: #646cff;
+  border-color: #646cff;
+  color: white;
+}
+
+.button--primary:hover:not(.button--disabled) {
+  background-color: #535bf2;
+  border-color: #535bf2;
+}
+
+.button--danger {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  color: white;
+}
+
+.button--danger:hover:not(.button--disabled) {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+/* 禁用状态 */
+.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* 图标样式 */
+.button__icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+/* 标签样式 */
+.button__label {
+  display: inline-block;
+}
