@@ -1,7 +1,7 @@
 /*
  * @Author: 万帅 771034201@qq.com
  * @Date: 2026-02-03 10:24:29
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @LastEditors: 万帅 771034201@qq.com
  * @Description:
  */
 /**
@@ -123,7 +123,7 @@ function App() {
         <button onClick={() => {
           console.log('跳转到 /测试子组件');
           push('/aaa');
-        }} style={{ marginRight: '10px' }}>Card组件</button>
+        }} style={{ marginRight: '10px' }}>aaa组件</button>
         <button onClick={() => {
           console.log('替换到 /card');
           replace('/card');
